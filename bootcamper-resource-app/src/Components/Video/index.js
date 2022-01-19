@@ -1,24 +1,22 @@
 import React from "react";
+import links from "./dummyData";
+import VideoViewer from "./videoComponent";
 
-function VideoViewer({ url, title }) {
+// Create/Display a video component for each video
+
+function VideoSection() {
    return (
-      <div>
-         <h3>{title}</h3>
-         <iframe
-            src={url}
-            title={title}
-            width="320"
-            height="240"
-            frameborder="0"
-            controls
-            allow="fullscreen"
-         >
-            Your browser does not support the video tag.
-         </iframe>
+      <div className="videoSection">
+         {links.map(function ({ url, title, id }) {
+            console.log(url);
+            return (
+               <div key={id}>
+                  <VideoViewer url={url} title={title} />{" "}
+               </div>
+            );
+         })}
       </div>
    );
 }
 
-export default VideoViewer;
-
-
+export default VideoSection;
