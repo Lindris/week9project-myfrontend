@@ -15,7 +15,7 @@ function SearchBar() {
       setSearchParameter(inputValue);
    }
 
-   console.log("this is my search parameter", searchParameter);
+   console.log(searchParameter);
 
    //span puts search bar and button beside each other in one line
    return (
