@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.png";
-
+import "./logo.css";
 //functional component Logo
 //displays webpage Logo
 
@@ -8,6 +8,6 @@ import logo from "./logo.png";
 //returns Logo
 
 function Logo() {
-   return <img src={logo} alt="logo" />;
+   return <img src={logo} alt="logo" className="logo" />;
 }
 export default Logo;

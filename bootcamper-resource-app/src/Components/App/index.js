@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Header text="Untied" subtitle="Coding Boost for Bootcampers" />
-      <Logo />
       <VideoSection />
     </div>
   );

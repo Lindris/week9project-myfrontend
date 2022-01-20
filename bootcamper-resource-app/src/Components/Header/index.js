@@ -1,5 +1,7 @@
 import React from "react";
 import SearchBar from "../SearchBar";
+import Logo from "../Logo";
+import "./header.css";
 
 //functional component Title
 //displays webpage Title
@@ -9,8 +11,9 @@ import SearchBar from "../SearchBar";
 
 function Header({ text, subtitle }) {
   return (
-    <div>
+    <div className="Header">
       <h1>{text}</h1>
+      <Logo />
       <h3>{subtitle}</h3>
       <SearchBar />
     </div>
