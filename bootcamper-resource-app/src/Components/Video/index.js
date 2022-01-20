@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from "react";
-import links from "./dummyData";
 import VideoViewer from "./videoComponent";
 
 // Create/Display a video component for each video
 
 function VideoSection() {
-   const [video, setVideo] = useState();
+   const [video, setVideo] = useState([]);
 
    useEffect(() => {
       async function fetchVideos() {
          const response = await fetch(
-            "https://soc-resources.herokuapp.com/links/?topic=CSS"
+            "https://soc-resources.herokuapp.com/links"
          );
          const data = await response.json();
-         setVideo(data);
+         setVideo(data.payload);
       }
       fetchVideos();
    }, []);
@@ -22,7 +21,7 @@ function VideoSection() {
 
    return (
       <div className="videoSection">
-         {links.map(function ({ url, title, id }) {
+         {video.map(function ({ url, title, id }) {
             //console.log(url);
             return (
                <div key={id}>
