@@ -8,7 +8,7 @@ function App() {
   //render the webpage Header - defined in Header/index.js
   return (
     <div className="App">
-      <Header text="Untied" />
+      <Header text="Untied" subtitle="Coding Boost for Bootcampers" />
       <Logo />
       <VideoSection />
     </div>

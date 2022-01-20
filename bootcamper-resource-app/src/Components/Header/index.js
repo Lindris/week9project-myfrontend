@@ -7,10 +7,11 @@ import SearchBar from "../SearchBar";
 //takes in title as props
 //returns Title
 
-function Header({ text }) {
+function Header({ text, subtitle }) {
   return (
     <div>
       <h1>{text}</h1>
+      <h3>{subtitle}</h3>
       <SearchBar />
     </div>
   );
