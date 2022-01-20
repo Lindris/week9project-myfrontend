@@ -10,7 +10,7 @@ function VideoSection() {
    useEffect(() => {
       async function fetchVideos() {
          const response = await fetch(
-            "https://soc-resources.herokuapp.com/links/?topic=CSS"
+            "https://soc-resources.herokuapp.com/links"
          );
          const data = await response.json();
          setVideo(data);
