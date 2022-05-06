@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "../Button";
 
 function SearchBar({ onSearch }) {
   // record input field value, changed parameter to an {object} - this made the searchbar filter work! Now need to go to definition of onSearch function and tell it to update the UI - this is in the parent Video component
@@ -28,7 +27,9 @@ function SearchBar({ onSearch }) {
     <form onSubmit={handleSubmit}>
       <span>
         <input className="SearchBar" onChange={onChange} type="text" />
-        <button className="Button" type="submit">Search</button>
+        <button className="Button" type="submit">
+          Search
+        </button>
       </span>
     </form>
   );

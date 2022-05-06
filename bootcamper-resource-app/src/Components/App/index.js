@@ -2,7 +2,6 @@ import "./App.css";
 import Logo from "../Logo";
 // import Background from "../background.jpg";
 
-import Header from "../Header";
 import VideoSection from "../Video";
 
 function App() {
