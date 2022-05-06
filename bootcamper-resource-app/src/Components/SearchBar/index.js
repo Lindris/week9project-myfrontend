@@ -3,6 +3,8 @@ import React, { useState } from "react";
 function SearchBar({ onSearch }) {
   // record input field value, changed parameter to an {object} - this made the searchbar filter work! Now need to go to definition of onSearch function and tell it to update the UI - this is in the parent Video component
 
+
+  
   const [inputValue, setInputValue] = useState("Search");
 
   function onChange(e) {

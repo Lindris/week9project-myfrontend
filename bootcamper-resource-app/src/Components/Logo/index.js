@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./untied-header.png";
+import logo from "./untied-header1.png";
 
 //functional component Logo
 //displays webpage Logo

@@ -38,7 +38,8 @@
 
 .Button {
   height: 45px;
-  border-radius: 20px;
+  width: auto;
+  border-radius: 15px;
   background-color: #2596be;
   font-weight: bold;
 }
