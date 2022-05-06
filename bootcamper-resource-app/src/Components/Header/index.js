@@ -9,11 +9,11 @@ import SearchBar from "../SearchBar";
 
 function Header({ text, subtitle }) {
   return (
-    <div>
+    <span>
       <h1>{text}</h1>
       <h3>{subtitle}</h3>
-      <SearchBar />
-    </div>
+      
+    </span>
   );
 }
 export default Header;

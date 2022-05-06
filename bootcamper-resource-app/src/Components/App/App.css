@@ -1,10 +1,46 @@
 .App {
   text-align: center;
+  font-weight: bold;
+  color: #2596be;
 }
 
-.App-logo {
+/* header {
+  border-bottom: 2px solid ;
+} */
+/* header > h1 {
+  display: inline-block;
+} */
+
+/* header span {
+  margin-left: 100px;
+} */
+
+/* .logo {
+  width: 100vw;
+  } */
+  
+
+/* .App-logo {
   height: 40vmin;
+  align-items: left;
   pointer-events: none;
+} */
+
+.SearchBar {
+  height: 40px;
+  width: 400px;
+  margin-left: 90px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  border-color: #2596be;
+}
+
+.Button {
+  height: 45px;
+  border-radius: 20px;
+  background-color: #2596be;
+  font-weight: bold;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,6 +50,7 @@
 }
 
 .App-header {
+  column-span: 2;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
